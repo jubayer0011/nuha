@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hey Nuha — Your Video</title>
+  <!-- Replace the URL in the button's onclick with your actual video link -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg1:#fff7fb;--bg2:#f0f8ff;--accent:#ff6bcb}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(135deg,var(--bg1),var(--bg2));font-family:'Baloo 2',system-ui,Arial}
+    .card{width:100%;max-width:480px;background:linear-gradient(180deg,rgba(255,255,255,0.9),#fff);border-radius:20px;padding:34px 28px;text-align:center;box-shadow:0 14px 30px rgba(17,17,17,0.08);border:1px solid rgba(255,107,203,0.08)}
+    .emoji{font-size:46px;margin-bottom:6px}
+    h1{margin:6px 0 8px;font-size:28px;letter-spacing:0.2px;color:#222}
+    p{margin:0 0 18px;color:#555;font-size:15px}
+    .heart{color:var(--accent);font-weight:700}
+    .btn{display:inline-block;padding:12px 20px;border-radius:12px;background:linear-gradient(90deg,var(--accent),#ff8adf);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 8px 18px rgba(255,107,203,0.18);border:none;cursor:pointer;font-size:15px;transition:transform .16s ease,box-shadow .16s}
+    .btn:active{transform:translateY(2px)}
+    .btn:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(255,107,203,0.18)}
+    .small{margin-top:12px;font-size:13px;color:#888}
+    /* cute confetti dots */
+    .dots{position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:none}
+    .dot{position:absolute;width:8px;height:8px;border-radius:50%;opacity:.9}
+  </style>
+</head>
+<body>
+  <div class="card" role="main" aria-labelledby="title">
+    <div class="emoji">✨</div>
+    <h1 id="title">hey <span class="heart">Nuha</span>, your video is ready</h1>
+    <p>সরি দোস্ত সময়মত ভিডিওটা দিতে পারিনি, তবে এখন দিলাম😊</p>
+    <!-- Change the URL below to your actual video link -->
+    <button class="btn" onclick="window.open('https://example.com','_blank')" aria-label="Watch video">Watch your video</button>
+    <div class="small">this page is created by your best friend JUBAYER</div>
+  </div>
+  <div class="dots" aria-hidden="true">
+    <span class="dot" style="left:6%;top:12%;background:#ffd7f0"></span>
+    <span class="dot" style="left:84%;top:18%;background:#ffe8d6"></span>
+    <span class="dot" style="left:22%;top:78%;background:#e6f8ff"></span>
+    <span class="dot" style="left:68%;top:66%;background:#fff1f8"></span>
+  </div>
+</body>
+</html>
