@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Video Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #333;
+      text-align: center;
+      font-size: 2em;
+    }
+
+    .video-container {
+      margin-top: 30px;
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+
+    .download-button {
+      margin: 20px 0 50px 0;
+      text-align: center;
+    }
+
+    .download-button a {
+      text-decoration: none;
+    }
+
+    .download-button button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .download-button button:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 250px;
+      }
+
+      .download-button button {
+        padding: 12px 25px;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>VIDEO FOR NUHA</h2>
+
+  <div class="video-container">
+    <iframe src="https://drive.google.com/file/d/1z1_mTvxDNpu9zLTCEsLiasDFF_PfFXed/preview" allow="autoplay"></iframe>
+  </div>
+
+  <div class="download-button">
+    <a href="https://drive.google.com/uc?export=download&id=1z1_mTvxDNpu9zLTCEsLiasDFF_PfFXed" download>
+      <button>Click here to download</button>
+    </a>
+  </div>
+</body>
+</html>
